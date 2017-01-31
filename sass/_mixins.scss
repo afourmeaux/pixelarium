@@ -1,0 +1,62 @@
+@mixin classes-responsive(){
+    @content;
+
+    &-phone{
+        @media (max-width: $phone-width) {
+            &,
+            &-down{
+                @content;
+            }
+        }
+
+        &-up{
+            @media (min-width: #{$phone-width} + 1) {
+                @content;
+            }
+        }
+    }
+    &-tablet{
+        @media (min-width: $phone-width) and (max-width: #{$tablet-width} + 1) {
+            @content;
+        }
+
+        &-up{
+            @media (min-width: #{$phone-width} + 1) {
+                @content;
+            }
+        }
+        &-down{
+            @media (max-width: $tablet-width) {
+                @content;
+            }
+        }
+    }
+    &-desktop{
+        @media (min-width: $tablet-width) and (max-width: #{$desktop-width} + 1) {
+            @content;
+        }
+
+        &-up{
+            @media (min-width: $tablet-width) {
+                @content;
+            }
+        }
+        &-down{
+            @media (max-width: #{$desktop-width} + 1) {
+                @content;
+            }
+        }
+    }
+    &-tv{
+        @media (min-width: $tv-width) {
+            &,
+            &-up{
+                @content;
+            }
+        }
+
+        &-down{
+            @content;
+        }
+    }
+}

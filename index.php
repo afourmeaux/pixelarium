@@ -3,10 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>Pixelarium</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/pixelarium.css">
 </head>
 <body>
-    <h1>Pixelarium</h1>
+    
 </body>
 </html>
