@@ -1,3 +1,10 @@
 @import "compass/reset";
 
+@import "variables";
+@import "mixins";
 @import "grid";
+
+
+header{
+    background: greenyellow;
+}

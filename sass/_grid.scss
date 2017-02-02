@@ -1,0 +1,11 @@
+.col {
+    @include classes-responsive() {
+        @for $i from 1 through 12 {
+            &-#{$i} {
+                width: (100% / 12) * $i;
+                padding: 15px;
+                transition: width 0.2s ease;
+            }
+        }
+    }
+}
