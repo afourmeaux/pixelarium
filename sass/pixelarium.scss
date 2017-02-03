@@ -2,9 +2,8 @@
 
 @import "variables";
 @import "mixins";
+
+@import "utilities";
 @import "grid";
 
-
-header{
-    background: greenyellow;
-}
+@import "global";

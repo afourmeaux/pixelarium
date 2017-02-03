@@ -45,3 +45,8 @@
         }
     }
 }
+
+@mixin rem($property, $value){
+    $property: $value + px;
+    // $property: $value * 0.1 + rem;
+}

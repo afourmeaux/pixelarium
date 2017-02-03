@@ -1,0 +1,18 @@
+.float{
+	&-right{
+		@include classes-responsive(){
+			float: right;
+		}
+	}
+	&-left{
+		@include classes-responsive(){
+			float: left;
+		}
+	}
+}
+
+.hide{
+	@include classes-responsive(){
+		display: none !important;
+	}
+}

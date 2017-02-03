@@ -22,14 +22,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1">
     <title><?php echo $pixelarium->name ?></title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/pixelarium.css">
 </head>
 <body>
-    <header class="col-desktop-12 col-phone-5 col-tablet-2">
-    	<a href="<?php echo $pixelarium->link ?>" alt="Aller à l'accueil">
-    		<img src="img/logo" alt="<?php echo $pixelarium->name ?>">
+    <header id="main-header">
+    	<a href="<?php echo $pixelarium->link ?>" class="float-left" alt="Aller à l'accueil">
+    		<!-- <img src="img/logo" alt="<?php echo $pixelarium->name ?>"> -->
+            <?php echo $pixelarium->name; ?>
     	</a>
-    	<nav>
+    	<nav class="float-right">
     		<ul>
     			<?php foreach ($projects as $project) { ?>
     				<li>

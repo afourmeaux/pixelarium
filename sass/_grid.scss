@@ -4,6 +4,7 @@
             &-#{$i} {
                 width: (100% / 12) * $i;
                 padding: 15px;
+                box-sizing: border-box;
                 transition: width 0.2s ease;
             }
         }
