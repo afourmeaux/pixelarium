@@ -24,6 +24,8 @@
     <title><?php echo $pixelarium->name ?></title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/pixelarium.css">
+
+    <script type="text/javascript" src="js/calendar.js"></script>
 </head>
 <body>
     <header id="main-header">

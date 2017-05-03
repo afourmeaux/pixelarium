@@ -50,3 +50,23 @@
     $property: $value + px;
     // $property: $value * 0.1 + rem;
 }
+
+@mixin placeholder() {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+@mixin rem($property, $value){
+    $property: $value + px;
+    //$property: unquote($value) * 0.1;
+}
